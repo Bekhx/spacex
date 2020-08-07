@@ -1,0 +1,258 @@
+body {
+   background-color: #010001;
+   color: white;
+   margin: 0;
+   padding-top: 53px;
+   font-family: 'Roboto', sans-serif;
+}
+
+header {
+   max-width: 1230px;
+   width: 90%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.list {
+   display: flex;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.item-link{
+   text-decoration: none;
+   color: #ffffff;
+   margin: 0 10px;
+   font-size: 12px;
+   line-height: 14px;
+}
+
+.secondary-nav .item-link {
+   color: #808080;
+}
+
+.main {
+   text-align: center;
+   padding: 120px 0 32px;
+}
+
+.title {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 64px;
+   line-height: 75px;
+   margin: 0 0 26px;
+}
+
+.description {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 140%;
+   max-width: 268px;
+   margin: auto;
+}
+
+.description:after {
+   content: '';
+   display: block;
+   width: 1px;
+   height: 60px;
+   background-color: #fff;
+   margin: 26px auto 0;
+}
+
+.video {
+   height: 750px;
+   max-width: 1230px;
+   width: 90%;
+   margin: auto;
+}
+
+.features {
+   max-width: 1230px;
+   width: 90%;
+   justify-content: space-around;
+   display: flex;
+   padding: 50px 0 0;;
+   margin: 0 auto;
+}
+
+.overview {
+   max-width: 615px;
+   max-height: 840px;
+   width: 50%;
+   color: #808080;
+}
+
+.features-title {
+   max-width: 177px;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 140%;
+   text-transform: uppercase;
+   margin: 0;
+}
+
+.table {
+   display: flex;
+}
+
+.table-right, .table-left {
+   list-style: none;
+   max-width: 251px;
+   width: 50%;
+   padding: 0;
+   margin: 45px 0 218px;
+}
+
+.table-li {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 180%;
+}
+
+.table-li:not(:last-child) {
+   margin-bottom: 11px;
+}
+
+.rocket {
+   max-width: 300px;
+   width: 50%;
+   z-index: 50;
+}
+
+.features-text {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 29px;
+   max-width: 490px;
+   width: 100%;
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 1230px;
+   width: 90%;
+   margin: 0 auto 150px;
+   z-index: 51;
+}
+
+.footer-logo {
+   margin-bottom: 44px;
+}
+
+.footer-nav .item-link {
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.contact-email, .footer-link {
+   font-size: 18px;
+   line-height: 21px;
+   color: #808080;
+   margin-bottom: 30px;
+   text-decoration: none;
+}
+
+.contact-button {
+   cursor: pointer;
+   outline: none;
+   border: 2px solid #fff;
+   border-radius: 6px;
+   width: 260px;
+   height: 60px;
+   background-color: inherit;
+   color: #fff
+}
+
+@media (max-width: 960px) {
+   .rocket {
+      max-width: 230px;
+   }
+   .features-title {
+      font-size: 20px;
+   }
+   .table-li {
+      font-size: 14px;
+   }
+   .features-text {
+      font-size: 14px;
+   }
+   .table-left, .table-right {
+      margin-bottom: 150px;
+   }
+}
+
+@media (max-width: 768px) {
+   header{
+      flex-direction: column;
+      align-items: center;
+   }
+   .logo {
+      margin-bottom: 20px;
+   }
+   .secondary-nav {
+      margin-top: 20px;
+   }
+   .rocket {
+      max-width: 180px;
+   }
+   .features-title {
+      font-size: 18px;
+   }
+   .table-li {
+      font-size: 10px;
+   }
+   .features-text {
+      font-size: 10px;
+   }
+   .video {
+      height: 500px;
+   }
+   .table-left, .table-right {
+      margin-bottom: 100px;
+   }
+   .footer-nav .item-link, .contact-email {
+      font-size: 12px;
+   }
+   .contact-button {
+      width: 160px;
+      height: 30px;
+   }
+}
+@media (max-width: 576px) {
+   .features { 
+      flex-direction: column;
+   }
+   .overview, .rocket {
+      width: 100%;
+      margin: auto;
+   }
+   .footer {
+      margin-top: 80px
+   }
+   .footer-nav .list {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .footer-nav .item {
+      margin-bottom: 10px;
+   }
+   .main {
+      padding-top: 50px;
+   }
+
+}
+@media (max-width: 480px) {
+   .video {
+      height: 350px;
+   }
+}
