@@ -232,12 +232,35 @@ header {
    .features { 
       flex-direction: column;
    }
+   .title {
+      font-size: 34px;
+      line-height: 35px;
+   }
+   .description:after {
+      display: none;
+   }
    .overview, .rocket {
       width: 100%;
       margin: auto;
    }
+   .features-title {
+      text-align: center;
+      max-width: none;
+      width: 100%;
+      font-size: 20px;
+   }
+   .table-left, .table-right {
+      margin-bottom: 50px;
+   }
+   .features-text, .table-li {
+      font-size: 14px;
+   }
+   .features-text {
+      margin-top: 45px
+   }
    .footer {
-      margin-top: 80px
+      margin-top: 80px;
+      margin-bottom: 80px;
    }
    .footer-nav .list {
       flex-wrap: wrap;
@@ -248,6 +271,10 @@ header {
    }
    .main {
       padding-top: 50px;
+   }
+   .footer-link {
+      display: block;
+      margin: 0;
    }
 
 }
